@@ -1,9 +1,9 @@
 const palindrome = (str)=>{
-  str = str.replace(/[\W_]/g, "").toLowerCase();
+  let newStr = str.replace(/[\W_]/g, "").toLowerCase();
 
-  const reversedStr = str.split("").reverse().join("");
+  const reversedStr = newStr.split("").reverse().join("");
 
-  if (str !== reversedStr) {
+  if (newStr !== reversedStr) {
     return false;
   } else {
     return true;
